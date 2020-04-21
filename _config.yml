@@ -1,8 +1,8 @@
 # Site settings
-title: gitopia
+title: 游戏开发历程
 #color:black
-SEOTitle: 巍哥的博客 | ZW Blog
-header-img: img/haokan.jpg
+SEOTitle: 张巍的博客 | JohnWayne Blog
+header-img: img/post-bg-desk.jpg
 email: johnwayne1995@163.com
 description: "Every failure is leading towards success."
 keyword: ""
@@ -13,7 +13,7 @@ github_repo: "https://github.com/johnwayne1995/johnwayne1995.github.io.git" # yo
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "A still tongue makes a happy life!"
-sidebar-avatar: /img/wuyanzu.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/selfie.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
