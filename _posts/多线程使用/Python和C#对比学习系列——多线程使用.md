@@ -161,7 +161,9 @@ Child Thread : 3 Completed
 Main Thread : 1 Completed
 ```
 任务也可以分开写，用Start()来执行
+
 Task task1 = new Task(PrintCounter);
+
 task1.Start();
 
 
@@ -257,16 +259,25 @@ Thread-2: 4
 Thread-2: 5
 Main Tread Completed
 ```
+
 threading比较麻烦的地方在于要建个myThread类，把方法写在run函数里。
 .join()的作用和C#的Wait()类似
 
 
 
-###参考链接
+
+
+
+### 参考链接
+
 [Multithreading in C#](https://dotnettutorials.net/lesson/multithreading-in-csharp/)
+
 [Task-based Asynchronous Programming in C#](https://dotnettutorials.net/lesson/asynchronous-programming-in-csharp/)
+
 [Task And Thread In C#](https://www.c-sharpcorner.com/article/task-and-thread-in-c-sharp/)
+
 [Thread vs Threading in Python](https://stackoverflow.com/questions/5568555/thread-vs-threading)
+
 [异步编程](https://docs.microsoft.com/en-us/dotnet/csharp/async)
 
 作者 [张巍]
