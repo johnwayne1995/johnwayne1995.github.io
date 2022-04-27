@@ -265,7 +265,9 @@ threading比较麻烦的地方在于要建个myThread类，把方法写在run函
 
 ### 实际应用——以一个UI按钮为例
 如果不采用async, 按钮直接按下，会假死，等待后才能移动
+
 ![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2022-04-27-多线程使用/stuck.gif)
+
 以下是使用了async和await的代码
 ```C#
 using System.Threading;
@@ -346,6 +348,10 @@ public class changeStr : MonoBehaviour
 [Thread vs Threading in Python](https://stackoverflow.com/questions/5568555/thread-vs-threading)
 
 [异步编程](https://docs.microsoft.com/en-us/dotnet/csharp/async)
+
+
+
+
 
 作者 [张巍]
 
