@@ -100,6 +100,9 @@ public class GameLoop: MonoBehaviour
 ## BehaviorDesign不能做哪些事情？
 
 [nodeCanvas工具和BehaviorDesign的特性比较][2]
+
+但
+
 [BehaviorDesign可以集成PlayMarker和对话系统][3]
 
 
@@ -111,5 +114,5 @@ public class GameLoop: MonoBehaviour
 
 [1]: https://blog.csdn.net/linxinfa/article/details/124483690
 [2]: https://nodecanvas.paradoxnotion.com/features-comparison/
-[2]: https://opsive.com/support/documentation/behavior-designer/integrations/
+[3]: https://opsive.com/support/documentation/behavior-designer/integrations/
 
