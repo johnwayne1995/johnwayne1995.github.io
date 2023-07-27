@@ -1,4 +1,16 @@
-# 自己想的一个例子用Behavior Design来实践行为树
+---
+layout:     post
+title:      自己想的一个例子用Behavior Design来实践行为树
+subtitle:   
+date:       2023-07-27
+author:     JohnWayne
+header-img: resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/CoverBackground.png
+catalog: true
+tags:
+    - 行为树
+    - 游戏开发
+---
+# 
 
 ------
 CSDN上的教程有很多 [【游戏开发教程】BehaviorDesigner插件制作AI行为树（Unity | 保姆级教程 | 动态图演示 | Unity2021最新版][1]，介绍了顺序节点、并行节点、选择节点、随机、优先级、中断、竞争、评估的概念，触发事件、通过继承来拓展节点。
@@ -26,6 +38,7 @@ CSDN上的教程有很多 [【游戏开发教程】BehaviorDesigner插件制作A
 ## 需要用代码实现的需求
 
 让我们丰富一下这个功能，封装一层Action做节点
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/吸血封装.png)
 
 ------
 
