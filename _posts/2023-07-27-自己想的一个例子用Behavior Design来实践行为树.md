@@ -10,16 +10,16 @@ CSDN上的教程有很多 [【游戏开发教程】BehaviorDesigner插件制作A
 ## 不用代码实现的需求
 
 ### 1. 吸血的行为树
-![process](resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/吸血.png)
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/吸血.png)
 
 ### 2. 吸血被人打断的行为树
-![process](resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/被人打断.png)
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/被人打断.png)
 
 ### 3. 为什么不能用Parallel Selector？
 
 ### 4. 执行
-![process](resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/吸血.gif)
-![process](resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/被人打断.gif)
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/吸血.gif)
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/被人打断.gif)
 
 ---
 
@@ -29,7 +29,7 @@ CSDN上的教程有很多 [【游戏开发教程】BehaviorDesigner插件制作A
 
 ------
 
-## Behavior不能做哪些事情？
+## BehaviorDesign不能做哪些事情？
 
 [nodeCanvas工具和BehaviorDesign的特性比较][2]
 
