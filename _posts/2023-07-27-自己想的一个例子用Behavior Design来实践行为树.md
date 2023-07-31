@@ -30,6 +30,10 @@ CSDN上的教程有很多 [【游戏开发教程】BehaviorDesigner插件制作A
 ### 3. 为什么不能用Parallel Selector？
 并行选择节点，并行执行，一真即真，**一真即停**，全假才假。
 
+而Selector节点是
+
+选择节点，**从左到右**，一真即真，一真即停，全假才假。
+
 ### 4. 执行
 ![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/吸血.gif)
 ![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/被人打断.gif)
@@ -38,24 +42,41 @@ CSDN上的教程有很多 [【游戏开发教程】BehaviorDesigner插件制作A
 
 ## 需要用代码实现的需求
 
-让我们丰富一下这个功能，封装一层Action做节点
+让我们丰富一下这个功能，封装一层Action做节点，用实体来做个Demo
 ![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/吸血封装.png)
 
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-07-27-自己想的一个例子用Behavior Design来实践行为树/mosAni.gif)
 ```CSharp
 // Bite.cs, 自定义节点：叮人。注意要继承Action
-
 using UnityEngine;
 using BehaviorDesigner.Runtime.Tasks;
 
 public class Bite : Action
 {
+    private GameObject Mos;
+    private GameObject Human;
+    public override void OnAwake()
+    {
+        base.OnAwake();
+        Mos = GameObject.Find("MosquitoPrefab");
+        Human = GameObject.Find("Human");
+    }
     public override TaskStatus OnUpdate()
     {
         Debug.Log("bite");
-        return TaskStatus.Success;
+        Mos.transform.rotation = Quaternion.RotateTowards(Mos.transform.rotation,
+            Quaternion.LookRotation(Human.transform.position - Mos.transform.position), 20 * Time.deltaTime);
+        if(Mos.transform.rotation == Quaternion.LookRotation(Human.transform.position - Mos.transform.position))
+        {
+            Mos.transform.position = new Vector3(-5, 0, 0);
+            return TaskStatus.Success;
+        }
+        else
+        {
+            return TaskStatus.Running;
+        }
     }
 }
-
 ------------------
 
 public class GameLoop: MonoBehaviour 
