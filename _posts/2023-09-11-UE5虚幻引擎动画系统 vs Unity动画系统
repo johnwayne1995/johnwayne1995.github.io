@@ -1,0 +1,48 @@
+---
+layout:     post
+title:      UE5虚幻引擎动画系统 vs Unity动画系统
+subtitle:   
+date:       2023-09-11
+author:     JohnWayne
+header-img: resources/2023-09-11-UE5虚幻引擎动画系统 vs Unity动画系统/CoverBackground.png
+catalog: true
+tags:
+    - 动画系统
+    - 游戏开发UE
+---
+
+
+------
+UE的蓝图是公认的好用，特别是美术在做动画方面，都推崇UE的工作流。Unity的动画系统中有哪些可以借鉴UE的地方呢？最近研究了一下Playable，发现思路和蓝图节点有异曲同工之妙，都是通过节点导流到最后的输出。本文就总结一下两个引擎动画系统的一些差异。
+
+------
+
+## 蓝图和状态机（以走路动画为例）
+
+完成一个八方向走路动画，UE是用一个动画蓝图和一个事件图标来完成的。这里的BP_Space2D也可以放进状态机节点。
+
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-09-11-UE5虚幻引擎动画系统 vs Unity动画系统/UEBluePrint.png)
+
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-09-11-UE5虚幻引擎动画系统 vs Unity动画系统/UEBlendTree.png)
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-09-11-UE5虚幻引擎动画系统 vs Unity动画系统/UEBlend.png)
+
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-09-11-UE5虚幻引擎动画系统 vs Unity动画系统/UEStateMachine.png)
+
+unity是通过Layer里的状态机还有blend节点实现
+
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-09-11-UE5虚幻引擎动画系统 vs Unity动画系统/UnityStateMachine.png)
+
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-09-11-UE5虚幻引擎动画系统 vs Unity动画系统/UnityBlendTree.png)
+
+unity Playable API用的方法是用脚本AnimationMixerPlayable类型构造blend节点，需要手动赋予权重，没有unity的blendTree和UE混合空间直观
+
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2023-09-11-UE5虚幻引擎动画系统 vs Unity动画系统/UnityPlayable.png)
+
+
+
+## 蒙太奇
+
+[动画蒙太奇](https://docs.unrealengine.com/5.0/zh-CN/animation-montage-in-unreal-engine) 需要动画图表中有插槽才能运行，因为它们只使用插槽播放动画。
+
+ 作者 [JohnWayne]
+2023 年 09月 11日
