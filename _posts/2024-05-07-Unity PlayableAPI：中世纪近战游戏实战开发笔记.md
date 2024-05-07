@@ -24,7 +24,7 @@ Unity PlayableAPI是Unity引擎自2016年引入的一项功能，它提供了一
 Playable可以通过一组API来创建一个Graph，而每个Graph可以由多个树形结构组成，每个树状结构都由一个Output节点作为根节点，叶子结点则由各种Playable组成。
 
 基本层级有AnimUnit, AnimAdapter, Mixer, LayerMixer, BlendTree2D, QueuePlayer
-![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2024-05-07-Unity PlayableAPI：中世纪近战游戏实战开发笔记/mindmap.svg)
+![](https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2024-05-07-Unity PlayableAPI：中世纪近战游戏实战开发笔记/mindmap.svg?sanitize=true)
 ## 利与弊
 ###灵活性：PlayableAPI提供了灵活的方式来创建复杂的动画逻辑，使开发者能够实现各种创新的游戏玩法。
 
