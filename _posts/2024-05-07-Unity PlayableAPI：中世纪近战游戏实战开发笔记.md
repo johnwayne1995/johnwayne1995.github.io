@@ -25,7 +25,8 @@ Playable可以通过一组API来创建一个Graph，而每个Graph可以由多�
 
 基本层级有AnimUnit, AnimAdapter, Mixer, LayerMixer, BlendTree2D, QueuePlayer
 <img src="https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2024-05-07-Unity PlayableAPI：中世纪近战游戏实战开发笔记/概览图.png">
-<img src="https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2024-05-07-Unity PlayableAPI：中世纪近战游戏实战开发笔记/mindmap.png>
+红色为override层，绿色为additive层
+<img src="https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2024-05-07-Unity PlayableAPI：中世纪近战游戏实战开发笔记/mindMap.png>
 ## 利与弊
 ### 利
 灵活性：PlayableAPI提供了灵活的方式来创建复杂的动画逻辑，使开发者能够实现各种创新的游戏玩法。
