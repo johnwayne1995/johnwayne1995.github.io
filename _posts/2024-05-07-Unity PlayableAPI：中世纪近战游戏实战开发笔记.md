@@ -25,14 +25,15 @@ Playable可以通过一组API来创建一个Graph，而每个Graph可以由多�
 
 基本层级有AnimUnit, AnimAdapter, Mixer, LayerMixer, BlendTree2D, QueuePlayer
 <img src="https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2024-05-07-Unity PlayableAPI：中世纪近战游戏实战开发笔记/概览图.png">
-<img src="https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2024-05-07-Unity PlayableAPI：中世纪近战游戏实战开发笔记/mindmap.svg" width="845" height="666">
+<img src="https://raw.githubusercontent.com/johnwayne1995/johnwayne1995.github.io/master/resources/2024-05-07-Unity PlayableAPI：中世纪近战游戏实战开发笔记/mindmap.png>
 ## 利与弊
-###灵活性：PlayableAPI提供了灵活的方式来创建复杂的动画逻辑，使开发者能够实现各种创新的游戏玩法。
+### 利
+灵活性：PlayableAPI提供了灵活的方式来创建复杂的动画逻辑，使开发者能够实现各种创新的游戏玩法。
 
 效率：通过可重复使用的PlayableBehaviour脚本和状态机，可以提高开发效率，减少重复劳动。
 
 交互性：PlayableAPI允许动态地控制动画播放，使游戏更具交互性和响应性。
-###弊：
+### 弊：
 学习曲线：对于新手开发者来说，学习和掌握PlayableAPI可能需要一定的时间和精力。
 
 复杂性：随着项目规模的增长，PlayableAPI的使用可能会变得复杂，需要谨慎设计和管理动画逻辑。
